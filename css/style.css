@@ -1,58 +1,94 @@
 body {
-    background-color: lightseagreen;
+    background-color: rgb(39, 238, 228);
     width: 960px;
     border: 1px solid black;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; min-height: 100vh;
     margin: auto;
+    padding: 30px;
 }
 main>* {
-    margin: 15px;
-    color: lightgray;
+    margin: 100px;
+    color: white;
+    margin-top: 100px;
 }
 
 header {
-    color: white; text-shadow:  black 1px 1px;
-    border: 1px solid black;
+    color: white; text-shadow:  black 3px 3px 3px;
+    border: 3px solid whitesmoke;
+    box-shadow: 3px 3px 3px black;
+    background-color: rgb(199, 60, 164);
     text-align: center;
     text-shadow: black 5px;
+    font-style: oblique;
+    font-size: xx-large;
+    border-radius: 3px;
+    box-sizing: content-box;
+    width: 40%;
+    margin: 20px;
 }
 
 ul {
-    border: solid 1px whitesmoke;
+    border: solid 3px whitesmoke;
+    box-shadow: 3px 3px 3px black;
     list-style-type: disc;
     margin: 20px;
-    list-style-position: center;
+    list-style-position: inside;
     text-shadow: black 2px 2px 2px;
     border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 110%;
+    font-style: oblique;
+    background-color: cadetblue;
 }
 
 ol {
-    border: whitesmoke 1px solid;
-    list-style: lower-roman; 
+    border: whitesmoke 3px solid;
+    box-shadow: 3px 3px 3px black;
+    list-style-type: disc;
+    list-style-position: inside; 
     margin: 20px;
     list-style: center;
     text-shadow: black 2px 2px 2px;
     border-radius: 5px;
-    
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 110%;
+    font-style: oblique;
+    background-color: coral;
 }
 
 p {
-    border: 1px solid white;
-    background-color: darkslategray;
+    border: 3px solid white;
+    box-shadow: 3px 3px 3px black; 
+    background-color: rgb(238, 69, 69);
     text-shadow: black 2px 2px 2px;
     border-radius: 5px;
     text-align: center;
     padding: 10px 10px 10px 10px;
     margin: 20px; 
+    font-style: arial;
+    font-weight: bolder;
+    font-size: 120%;
 }
 
 footer {
-    border: 1px solid black;
+    border: 3px solid whitesmoke;
+    box-shadow: 3px 3px 3px black;
     border-radius: 5px;
     text-align: center;
-    color:whitesmoke;
-    text-shadow: 2px 2px 2px black;
+    color: white;
+    text-shadow: 3px 3px 3px black;
     margin: 20px; 
-    background-color: yellowgreen;   
+    background-color: rgb(187, 240, 83);
+    padding: 10px;
+    font-size: 110%;
+    box-sizing: content-box;
+    width: 40%;   
 }
 
 
