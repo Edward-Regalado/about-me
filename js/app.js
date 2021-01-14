@@ -44,7 +44,7 @@ if (answerThree === 'yes' || answerThree === 'y') {
   alert('I love to Snowboard!');
 } else if (answerThree === 'no' || answerThree === 'n') {
   //console.log('Did you even read my Bio? \:)');
-  alert('Did you even read my Bio? \:)');
+  alert('Did you even read my Bio? :)');
 }
 
 //question 4
