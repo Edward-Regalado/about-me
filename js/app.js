@@ -14,8 +14,8 @@ console.log('Hello World');
 //var normalizedQuestionOne = questionOne.toLocaleLowerCase();
 
 //Greeting message
-alert('Hello ' + userName + ', nice to meet you!');
 var userName = prompt('Hello, what\'s your name?');
+alert('Hello ' + userName + ', nice to meet you!');
 
 //question 1
 var answerOne = prompt('Do I live in Seattle?').toLowerCase();
@@ -68,7 +68,7 @@ if (answerFive === 'yes' || answerFive === 'y') {
 }
 
 //Goodbye message
-alert('Thanks ' + userName + 'for visiting my web page!');
+alert('Thanks ' + userName + ' for visiting my web page!');
 
 
 
