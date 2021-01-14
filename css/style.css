@@ -1,0 +1,35 @@
+body {
+    background-color: burlywood;
+    width: 960px;
+    border: 1px solid black;
+    margin: auto;
+}
+main>* {
+    margin: 20px;
+    color: blue;
+    
+}
+
+header {
+    color: brown; text-shadow: cadetblue;
+    border: 5 solid blue;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 50px;
+    list-style-position: center;
+}
+
+ ol {
+    list-style: lower-roman; 
+    margin: 50px;
+    list-style: center;
+}
+
+p {
+    border: 1px solid blue;
+    background-color: chartreuse;
+}
+
+
