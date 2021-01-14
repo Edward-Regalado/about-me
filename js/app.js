@@ -9,12 +9,13 @@ console.log('Hello World');
 ///console.log(banana);
 //}
 
-//var userName = prompt('Hello, what\'s your name?');
-//alert('Hello ' + userName + ', nice to meet you!');
 //write 5 questions. They MUST accept yes or no OR y or n IN ANY CASE
 //example: YES, yes, YEs, yeS, , yEs, Y, y 
-
 //var normalizedQuestionOne = questionOne.toLocaleLowerCase();
+
+//Greeting message
+alert('Hello ' + userName + ', nice to meet you!');
+var userName = prompt('Hello, what\'s your name?');
 
 //question 1
 var answerOne = prompt('Do I live in Seattle?').toLowerCase();
@@ -66,8 +67,8 @@ if (answerFive === 'yes' || answerFive === 'y') {
   alert('I really feel like you don\'t know me at all :(');
 }
 
-
-
+//Goodbye message
+alert('Thanks ' + userName + 'for visiting my web page!');
 
 
 
