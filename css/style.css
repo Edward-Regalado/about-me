@@ -1,35 +1,58 @@
 body {
-    background-color: burlywood;
+    background-color: lightseagreen;
     width: 960px;
     border: 1px solid black;
     margin: auto;
 }
 main>* {
-    margin: 20px;
-    color: blue;
-    
+    margin: 15px;
+    color: lightgray;
 }
 
 header {
-    color: brown; text-shadow: cadetblue;
-    border: 5 solid blue;
+    color: white; text-shadow:  black 1px 1px;
+    border: 1px solid black;
+    text-align: center;
+    text-shadow: black 5px;
 }
 
 ul {
+    border: solid 1px whitesmoke;
     list-style-type: disc;
-    margin: 50px;
+    margin: 20px;
     list-style-position: center;
+    text-shadow: black 2px 2px 2px;
+    border-radius: 5px;
 }
 
- ol {
+ol {
+    border: whitesmoke 1px solid;
     list-style: lower-roman; 
-    margin: 50px;
+    margin: 20px;
     list-style: center;
+    text-shadow: black 2px 2px 2px;
+    border-radius: 5px;
+    
 }
 
 p {
-    border: 1px solid blue;
-    background-color: chartreuse;
+    border: 1px solid white;
+    background-color: darkslategray;
+    text-shadow: black 2px 2px 2px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    margin: 20px; 
+}
+
+footer {
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    color:whitesmoke;
+    text-shadow: 2px 2px 2px black;
+    margin: 20px; 
+    background-color: yellowgreen;   
 }
 
 

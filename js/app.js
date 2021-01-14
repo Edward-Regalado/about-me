@@ -19,20 +19,20 @@ console.log('Hello World');
 //question 1
 var answerOne = prompt('Do I live in Seattle?').toLowerCase();
 if (answerOne === 'yes' || answerOne === 'y') {
-  //console.log('You\'re correct!');
+  console.log('You\'re correct!');
   alert('You\'re correct');
 } else if (answerOne === 'no' || answerOne === 'n') {
-  //console.log('You\'re WRONG!');
+  console.log('You\'re WRONG!');
   alert('You\'re WRONG!');
 }
 
 //question 2
 var answerTwo = prompt('Do I own a dog?').toLocaleLowerCase();
 if (answerTwo === 'yes' || answerTwo === 'y') {
-  //console.log('you are correct');
+  console.log('you are correct');
   alert('you are correct');
 } else if (answerTwo === 'no' || answerTwo === 'n') {
-  //console.log('guess again!');
+  console.log('That\'s not right!');
   alert('That\'s not right!');
 }
 
@@ -50,12 +50,14 @@ var answerFour = prompt('Was I born in Chicago?').toLocaleLowerCase();
 if (answerFour === 'yes' || answerFour === 'y') {
   alert('Spot on!');
 } else if (answerFour === 'no' || answerFour === 'n') {
+  console.log('You don\'t know me at all!');
   alert('You don\'t know me at all!');
 }
 
 //question 5
 var answerFive = prompt('Was I in my Military?').toLocaleLowerCase();
 if (answerFive === 'yes' || answerFive === 'y') {
+  console.log('Yes, I served my country for almost 8 years');
   alert('Yes, I served my country for almost 8 years');
 }
 
