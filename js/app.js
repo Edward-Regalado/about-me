@@ -68,7 +68,7 @@ if (answerFive === 'yes' || answerFive === 'y') {
 }
 
 //Goodbye message
-alert('Thanks ' + userName + ' for visiting my web page!');
+alert('Thanks for visiting my web page, ' + userName + '!');
 
 
 
