@@ -63,7 +63,7 @@ if (answerFive === 'yes' || answerFive === 'y') {
   //console.log('Yes, I served my country for almost 8 years');
   alert('I served my country for almost 8 years');
 } else if (answerFive === 'no' || answerFive === 'n') {
-  console.log('I feel like you don\'t know me at all :(');
+  //console.log('I feel like you don\'t know me at all :(');
   alert('I really feel like you don\'t know me at all :(');
 }
 
