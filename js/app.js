@@ -100,7 +100,8 @@ while (guess < 4 && !correctGuess) {
     alert(`You're out of chances! The correct answer was ${myAge}`);
   }
 
-//question 79
+//question7
+
   var whatFood = ['pizza', 'pasta', 'mexican', 'sushi', 'peanut butter', 'kimchi'];
   var guessFood = prompt('Can you guess what my favorite foods are?').toLocaleLowerCase();
   var answeredCorrect = false;
