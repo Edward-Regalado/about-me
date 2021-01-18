@@ -30,7 +30,7 @@ if (answerOne === 'yes' || answerOne === 'y') {
 }
 
 //question 2
-var answerTwo = prompt('Do I own a dog?').toLocaleLowerCase();
+var answerTwo = prompt('Do I own a dog?').toLowerCase();
 if (answerTwo === 'yes' || answerTwo === 'y') {
   ///console.log('you are correct');
   alert('Yes, her name is Lemon');
@@ -42,7 +42,7 @@ if (answerTwo === 'yes' || answerTwo === 'y') {
 
 
 //question 3
-var answerThree = prompt('Do I like to Snowboard?').toLocaleLowerCase();
+var answerThree = prompt('Do I like to Snowboard?').toLowerCase();
 if (answerThree === 'yes' || answerThree === 'y') {
   //console.log('I love to Snowboard!');
   alert('I love to Snowboard!');
@@ -53,7 +53,7 @@ if (answerThree === 'yes' || answerThree === 'y') {
 }
 
 //question 4
-var answerFour = prompt('Was I born in Chicago?').toLocaleLowerCase();
+var answerFour = prompt('Was I born in Chicago?').toLowerCase();
 if (answerFour === 'yes' || answerFour === 'y') {
   //console.log('Spot on!');
   alert('Spot on!');
@@ -65,7 +65,7 @@ if (answerFour === 'yes' || answerFour === 'y') {
 
 
 //question 5
-var answerFive = prompt('Did I serve in the Military?').toLocaleLowerCase();
+var answerFive = prompt('Did I serve in the Military?').toLowerCase();
 if (answerFive === 'yes' || answerFive === 'y') {
   //console.log('Yes, I served my country for almost 8 years');
   alert('I served my country for almost 8 years');
@@ -95,15 +95,14 @@ while (guess < 4 && !correctGuess) {
     correctGuess = true;
     pointTotal++;
   }
-
   if (!correctGuess) {
     alert(`You're out of chances! The correct answer was ${myAge}`);
   }
 
-//question7
+  //question7
 
   var whatFood = ['pizza', 'pasta', 'mexican', 'sushi', 'peanut butter', 'kimchi'];
-  var guessFood = prompt('Can you guess what my favorite foods are?').toLocaleLowerCase();
+  var guessFood = prompt('Can you guess what my favorite foods are?').toLowerCase();
   var answeredCorrect = false;
   var attemptsRemaining = 6;
   while (attemptsRemaining > 0 && !answeredCorrect) {
@@ -117,10 +116,10 @@ while (guess < 4 && !correctGuess) {
       }
     }
     if (attemptsRemaining > 0 && !answeredCorrect) {
-      guessFood = prompt('I don\'t like that food. Please try again!').toLocaleLowerCase();
+      guessFood = prompt('I don\'t like that food. Please try again!').toLowerCase();
     }
     if (attemptsRemaining === 0 && !answeredCorrect) {
-      console.log( `Tough luck ${userName}! My favorite foods are pizza, pasta, mexican, sushi, peanut butter and kimchi`);
+      console.log(`Tough luck ${userName}! My favorite foods are pizza, pasta, mexican, sushi, peanut butter and kimchi`);
       alert(`Tough luck ${userName}! My favorite foods are pizza, pasta, mexican, sushi, penaut butter and kimchi`);
     }
   }
