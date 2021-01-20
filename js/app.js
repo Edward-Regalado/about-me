@@ -10,7 +10,7 @@ console.log('Hello World');
 //}
 
 //write 5 questions. They MUST accept yes or no OR y or n IN ANY CASE
-//example: YES, yes, YEs, yeS, , yEs, Y, y 
+//example: YES, yes, YEs, yeS, yEs, Y, y 
 //var normalizedQuestionOne = questionOne.toLocaleLowerCase();
 
 //Greeting message
@@ -18,86 +18,112 @@ var userName = prompt('Hello, what\'s your name?');
 alert('Hello ' + userName + ', nice to meet you!');
 var pointTotal = 0;
 
+
 //question 1
-var answerOne = prompt('Do I live in Seattle?').toLowerCase();
-if (answerOne === 'yes' || answerOne === 'y') {
-  //console.log('You\'re correct!');
-  alert('You\'re correct!');
-  pointTotal++;
-} else if (answerOne === 'no' || answerOne === 'n') {
-  //console.log('You\'re WRONG!');
-  alert('You\'re WRONG!');
+function questionOne(location) {
+  let answerOne = prompt('Do I live in ' + location + '?').toLowerCase();
+  if (answerOne === 'yes' || answerOne === 'y') {
+    //console.log('You\'re correct!');
+    alert('You\'re correct!');
+    pointTotal++;
+  } else if (answerOne === 'no' || answerOne === 'n') {
+    //console.log('You\'re WRONG!');
+    alert('You\'re WRONG!');
+  }
 }
 
+questionOne('Seattle');
+
 //question 2
-var answerTwo = prompt('Do I own a dog?').toLowerCase();
-if (answerTwo === 'yes' || answerTwo === 'y') {
-  ///console.log('you are correct');
-  alert('Yes, her name is Lemon');
-  pointTotal++;
-} else if (answerTwo === 'no' || answerTwo === 'n') {
-  //console.log('That\'s not right...);
-  alert('That\'s not right...');
+function questionTwo(petType) {
+  let answerTwo = prompt('Do I own a ' + petType + '?').toLowerCase();
+  if (answerTwo === 'yes' || answerTwo === 'y') {
+    ///console.log('you are correct');
+    alert('Yes, her name is Lemon');
+    pointTotal++;
+  } else if (answerTwo === 'no' || answerTwo === 'n') {
+    //console.log('That\'s not right...);
+    alert('That\'s not right...');
+  }
 }
+
+questionTwo('dog');
 
 
 //question 3
-var answerThree = prompt('Do I like to Snowboard?').toLowerCase();
-if (answerThree === 'yes' || answerThree === 'y') {
-  //console.log('I love to Snowboard!');
-  alert('I love to Snowboard!');
-  pointTotal++;
-} else if (answerThree === 'no' || answerThree === 'n') {
-  //console.log('Did you even read my Bio? \:)');
-  alert('Did you even read my Bio? :)');
+function questionThree(sport) {
+  let answerThree = prompt('Do I like to ' + sport + '?').toLowerCase();
+  if (answerThree === 'yes' || answerThree === 'y') {
+    //console.log('I love to Snowboard!');
+    alert('I love to Snowboard!');
+    pointTotal++;
+  } else if (answerThree === 'no' || answerThree === 'n') {
+    //console.log('Did you even read my Bio? \:)');
+    alert('Did you even read my Bio? :)');
+  }
 }
 
+questionThree('Snowbaord');
+
 //question 4
-var answerFour = prompt('Was I born in Chicago?').toLowerCase();
-if (answerFour === 'yes' || answerFour === 'y') {
-  //console.log('Spot on!');
-  alert('Spot on!');
-  pointTotal++;
-} else if (answerFour === 'no' || answerFour === 'n') {
-  //console.log('You don\'t know me at all!');
-  alert('You don\'t know me at all!');
+function questionFour(birthPlace) {
+  let answerFour = prompt('Was I born in ' + birthPlace + '?').toLowerCase();
+  if (answerFour === 'yes' || answerFour === 'y') {
+    //console.log('Spot on!');
+    alert('Spot on!');
+    pointTotal++;
+  } else if (answerFour === 'no' || answerFour === 'n') {
+    //console.log('You don\'t know me at all!');
+    alert('You don\'t know me at all!');
+  }
 }
+
+questionFour('Chicago');
 
 
 //question 5
-var answerFive = prompt('Did I serve in the Military?').toLowerCase();
-if (answerFive === 'yes' || answerFive === 'y') {
-  //console.log('Yes, I served my country for almost 8 years');
-  alert('I served my country for almost 8 years');
-  pointTotal++;
-} else if (answerFive === 'no' || answerFive === 'n') {
-  //console.log('I feel like you don\'t know me at all :(');
-  alert('I really feel like you don\'t know me at all :(');
+function questionFive(occupation) {
+  let answerFive = prompt('Did I serve in the ' + occupation + '?').toLowerCase();
+  if (answerFive === 'yes' || answerFive === 'y') {
+    //console.log('Yes, I served my country for almost 8 years');
+    alert('I served my country for almost 8 years');
+    pointTotal++;
+  } else if (answerFive === 'no' || answerFive === 'n') {
+    //console.log('I feel like you don\'t know me at all :(');
+    alert('I really feel like you don\'t know me at all :(');
+  }
 }
 
+questionFive('Military');
 
 
 //question 6
-
 var guess = 0;
 var myAge = 38;
 var correctGuess = false;
 while (guess < 4 && !correctGuess) {
-  guess++;
-  var guessAge = parseInt(prompt('How old do you think I am?'));
+guess++;
+
+
+function questionSix(age) {
+  let guessAge = parseInt(prompt('Guess ' + age + '?'));
   //console.log(typeof guessAge, guessAge);
   if (guessAge < myAge) {
-    alert('sorry, that\'s too young.');
-  } else if (guessAge > myAge) {
-    alert('Aw, that is too old.');
-  } else if (guessAge === 38) {
-    alert(`Correct ${userName} ! `);
-    correctGuess = true;
-    pointTotal++;
+      alert('sorry, that\'s too young.');
+    } else if (guessAge > myAge) {
+      alert('Aw, that is too old.');
+    } else if (guessAge === 38) {
+      alert(`Correct ${userName} ! `);
+      correctGuess = true;
+      pointTotal++;
+    }
+    if (!correctGuess) {
+      alert(`You're out of chances! The correct answer was ${myAge}`);
+    }
   }
-  if (!correctGuess) {
-    alert(`You're out of chances! The correct answer was ${myAge}`);
-  }
+
+  questionSix('how old I am');
+
 
   //question7
 
