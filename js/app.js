@@ -3,7 +3,7 @@
 console.log('Hello World');
 
 //linter test
-//var banana = 42;
+//let banana = 42;
 
 //if (banana) {
 ///console.log(banana);
@@ -98,17 +98,15 @@ questionFive('Military');
 
 
 //question 6
-var guess = 0;
-var myAge = 38;
-var correctGuess = false;
-while (guess < 4 && !correctGuess) {
-guess++;
-
-
 function questionSix(age) {
-  let guessAge = parseInt(prompt('Guess ' + age + '?'));
-  //console.log(typeof guessAge, guessAge);
-  if (guessAge < myAge) {
+  let guess = 0;
+  let myAge = 38;
+  let correctGuess = false;
+  while (guess < 4 && !correctGuess) {
+    guess++;
+    let guessAge = parseInt(prompt('Guess ' + age + '?'));
+    //console.log(typeof guessAge, guessAge);
+    if (guessAge < myAge) {
       alert('sorry, that\'s too young.');
     } else if (guessAge > myAge) {
       alert('Aw, that is too old.');
@@ -117,23 +115,23 @@ function questionSix(age) {
       correctGuess = true;
       pointTotal++;
     }
-    if (!correctGuess) {
-      alert(`You're out of chances! The correct answer was ${myAge}`);
-    }
   }
+  if (!correctGuess) {
+    alert(`You're out of chances! The correct answer was ${myAge}`);
+  }
+}
+questionSix('how old I am');
 
-  questionSix('how old I am');
 
-
-  //question7
-
-  var whatFood = ['pizza', 'pasta', 'mexican', 'sushi', 'peanut butter', 'kimchi'];
-  var guessFood = prompt('Can you guess what my favorite foods are?').toLowerCase();
-  var answeredCorrect = false;
-  var attemptsRemaining = 6;
+//question7
+function questionSeven(food) {
+  let whatFood = ['pizza', 'pasta', 'mexican', 'sushi', 'peanut butter', 'kimchi'];
+  let guessFood = prompt('Can you guess what my ' + food + ' are?').toLowerCase();
+  let answeredCorrect = false;
+  let attemptsRemaining = 6;
   while (attemptsRemaining > 0 && !answeredCorrect) {
     attemptsRemaining--;
-    for (var i = 0; i < whatFood.length; i++) {
+    for (let i = 0; i < whatFood.length; i++) {
       if (guessFood === whatFood[i]) {
         answeredCorrect = true;
         //console.log(`I love to eat ${whatFood}`);
@@ -151,11 +149,9 @@ function questionSix(age) {
   }
 }
 
+questionSeven('favorite foods');
+
 
 //Good bye message
 alert(`Your total points is ${pointTotal}`);
 alert('Thank for visiting my web page, ' + userName + '!');
-
-
-
-
